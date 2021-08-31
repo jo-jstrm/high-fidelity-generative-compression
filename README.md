@@ -46,9 +46,10 @@ pip install -r requirements.txt
 ```bash
 git clone https://github.com/Justin-Tan/high-fidelity-generative-compression.git
 cd high-fidelity-generative-compression
+pip install -e .
 ```
 
-To check if your setup is working, run `python3 -m src.model` in root. Usage instructions can be found in the [user's guide](src/README.md).
+To check if your setup is working, run `python3 -m generative_compression.src.model` in root. Usage instructions can be found in the [user's guide](src/README.md).
 
 ### Training
 
