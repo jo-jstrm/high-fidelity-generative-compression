@@ -14,12 +14,12 @@ import torch.nn.functional as F
 
 # Custom modules
 from src import hyperprior
-from src.loss import losses
-from src.helpers import maths, datasets, utils
-from src.network import encoder, generator, discriminator, hyper
-from src.loss.perceptual_similarity import perceptual_loss as ps 
+from gan_compression.src.loss import losses
+from gan_compression.src.helpers import maths, datasets, utils
+from gan_compression.src.network import encoder, generator, discriminator, hyper
+from gan_compression.src.loss.perceptual_similarity import perceptual_loss as ps 
 
-from default_config import ModelModes, ModelTypes, hific_args, directories
+from gan_compression.default_config import ModelModes, ModelTypes, hific_args, directories
 
 Intermediates = namedtuple("Intermediates",
     ["input_image",             # [0, 1] (after scaling from [0, 255])

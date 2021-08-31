@@ -6,7 +6,7 @@ import torch.nn.functional as F
 import numpy as np
 
 # Custom
-from src.helpers import maths
+from gan_compression.src.helpers import maths
 
 MIN_SCALE = 0.11
 MIN_LIKELIHOOD = 1e-9

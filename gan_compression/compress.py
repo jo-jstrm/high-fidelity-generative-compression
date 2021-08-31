@@ -14,11 +14,11 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 # Custom modules
-from src.helpers import utils, datasets, metrics
-from src.compression import compression_utils
-from src.loss.perceptual_similarity import perceptual_loss as ps
-from default_config import hific_args, mse_lpips_args, directories, ModelModes, ModelTypes
-from default_config import args as default_args
+from gan_compression.src.helpers import utils, datasets, metrics
+from gan_compression.src.compression import compression_utils
+from gan_compression.src.loss.perceptual_similarity import perceptual_loss as ps
+from gan_compression.default_config import hific_args, mse_lpips_args, directories, ModelModes, ModelTypes
+from gan_compression.default_config import args as default_args
 
 File = namedtuple('File', ['original_path', 'compressed_path',
                            'compressed_num_bytes', 'bpp'])

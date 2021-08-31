@@ -16,9 +16,9 @@ from warnings import warn
 from collections import namedtuple
 
 # Custom
-from src.helpers import maths, utils
-from src.compression import ans as vrans
-from src.compression import compression_utils
+from gan_compression.src.helpers import maths, utils
+from gan_compression.src.compression import ans as vrans
+from gan_compression.src.compression import compression_utils
 
 Codec = namedtuple('Codec', ['push', 'pop'])
 cast2u64 = lambda x: np.array(x, dtype=np.uint64)

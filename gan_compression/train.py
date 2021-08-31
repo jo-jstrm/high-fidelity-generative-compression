@@ -23,9 +23,9 @@ import torch.nn.functional as F
 from torch.utils.tensorboard import SummaryWriter
 
 # Custom modules
-from src.model import Model
-from src.helpers import utils, datasets
-from default_config import hific_args, mse_lpips_args, directories, ModelModes, ModelTypes
+from gan_compression.src.model import Model
+from gan_compression.src.helpers import utils, datasets
+from gan_compression.default_config import hific_args, mse_lpips_args, directories, ModelModes, ModelTypes
 
 # go fast boi!!
 torch.backends.cudnn.benchmark = True

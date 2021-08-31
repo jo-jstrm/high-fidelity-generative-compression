@@ -171,7 +171,7 @@ def load_model(save_path, logger, device, model_type=None, model_mode=None, curr
     strict=False, silent=False):
 
     start_time = time.time()
-    from src.model import Model
+    from gan_compression.src.model import Model
     checkpoint = torch.load(save_path)
     loaded_args_d = checkpoint['args']
 
